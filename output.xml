@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.3 on win32)" generated="2025-04-25T15:23:11.697492" rpa="false" schemaversion="5">
+<suite id="s1" name="Preenchimento Correto" source="c:\Users\nicolas.ferreira\OneDrive - CRAFT\Área de Trabalho\curso-robot\testes\preenchimento_correto.robot">
+<kw name="Dado que eu acesse o Organo" owner="setup_teardown" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-25T15:23:12.975119" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000/'.</msg>
+<arg>url=http://localhost:3000/</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-25T15:23:12.974682" elapsed="4.875827"/>
+</kw>
+<status status="PASS" start="2025-04-25T15:23:12.973171" elapsed="4.877652"/>
+</kw>
+<test id="s1-t1" name="Verificar se ao preencher os campos do formulário corretamente os dados são inseridos e salvos em um novo card" line="8">
+<kw name="Dado que eu preencha os campos do formulário" owner="cadastro">
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2025-04-25T15:23:17.853521" level="INFO">${Nome} = Otto</msg>
+<var>${Nome}</var>
+<status status="PASS" start="2025-04-25T15:23:17.853046" elapsed="0.001206"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-25T15:23:17.856048" level="INFO">Typing text 'Otto' into text field 'id:form-nome'.</msg>
+<msg time="2025-04-25T15:23:17.870306" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78BEAEFA5+77893]
+	GetHandleVerifier [0x00007FF78BEAF000+77984]
+	(No symbol) [0x00007FF78BC791BA]
+	(No symbol) [0x00007FF78BC51B63]
+	(No symbol) [0x00007FF78BCFE92E]
+	(No symbol) [0x00007FF78BD1E972]
+	(No symbol) [0x00007FF78BCF6F03]
+	(No symbol) [0x00007FF78BCC0328]
+	(No symbol) [0x00007FF78BCC1093]
+	GetHandleVerifier [0x00007FF78C167B6D+2931725]
+	GetHandleVerifier [0x00007FF78C162132+2908626]
+	GetHandleVerifier [0x00007FF78C1800F3+3031443]
+	GetHandleVerifier [0x00007FF78BEC91EA+184970]
+	GetHandleVerifier [0x00007FF78BED086F+215311]
+	GetHandleVerifier [0x00007FF78BEB6EC4+110436]
+	GetHandleVerifier [0x00007FF78BEB7072+110866]
+	GetHandleVerifier [0x00007FF78BE9D479+5401]
+	BaseThreadInitThunk [0x00007FFDEDD57374+20]
+	RtlUserThreadStart [0x00007FFDEDF3CC91+33]
+</msg>
+<msg time="2025-04-25T15:23:17.879128" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78BEAEFA5+77893]
+	GetHandleVerifier [0x00007FF78BEAF000+77984]
+	(No symbol) [0x00007FF78BC791BA]
+	(No symbol) [0x00007FF78BC51B63]
+	(No symbol) [0x00007FF78BCFE92E]
+	(No symbol) [0x00007FF78BD1E972]
+	(No symbol) [0x00007FF78BCF6F03]
+	(No symbol) [0x00007FF78BCC0328]
+	(No symbol) [0x00007FF78BCC1093]
+	GetHandleVerifier [0x00007FF78C167B6D+2931725]
+	GetHandleVerifier [0x00007FF78C162132+2908626]
+	GetHandleVerifier [0x00007FF78C1800F3+3031443]
+	GetHandleVerifier [0x00007FF78BEC91EA+184970]
+	GetHandleVerifier [0x00007FF78BED086F+215311]
+	GetHandleVerifier [0x00007FF78BEB6EC4+110436]
+	GetHandleVerifier [0x00007FF78BEB7072+110866]
+	GetHandleVerifier [0x00007FF78BE9D479+5401]
+	BaseThreadInitThunk [0x00007FFDEDD57374+20]
+	RtlUserThreadStart [0x00007FFDEDF3CC91+33]
+</msg>
+<arg>${CAMPO_NOME}</arg>
+<arg>${Nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-04-25T15:23:17.854618" elapsed="0.430340">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78BEAEFA5+77893]
+	GetHandleVerifier [0x00007FF78BEAF000+77984]
+	(No symbol) [0x00007FF78BC791BA]
+	(No symbol) [0x00007FF78BC51B63]
+	(No symbol) [0x00007FF78BCFE92E]
+	(No symbol) [0x00007FF78BD1E972]
+	(No symbol) [0x00007FF78BCF6F03]
+	(No symbol) [0x00007FF78BCC0328]
+	(No symbol) [0x00007FF78BCC1093]
+	GetHandleVerifier [0x00007FF78C167B6D+2931725]
+	GetHandleVerifier [0x00007FF78C162132+2908626]
+	GetHandleVerifier [0x00007FF78C1800F3+3031443]
+	GetHandleVerifier [0x00007FF78BEC91EA+184970]
+	GetHandleVerifier [0x00007FF78BED086F+215311]
+	GetHandleVerifier [0x00007FF78BEB6EC4+110436]
+	GetHandleVerifier [0x00007FF78BEB7072+110866]
+	GetHandleVerifier [0x00007FF78BE9D479+5401]
+	BaseThreadInitThunk [0x00007FFDEDD57374+20]
+	RtlUserThreadStart [0x00007FFDEDF3CC91+33]
+</status>
+</kw>
+<kw name="Job" owner="FakerLibrary">
+<var>${Cargo}</var>
+<status status="NOT RUN" start="2025-04-25T15:23:18.285528" elapsed="0.000203"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CAMPO_CARGO}</arg>
+<arg>${Cargo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-25T15:23:18.285976" elapsed="0.000115"/>
+</kw>
+<kw name="Image Url" owner="FakerLibrary">
+<var>${Imagem}</var>
+<arg>width=100</arg>
+<arg>height=100</arg>
+<doc>Returns URL to placeholder image
+Example: http://placehold.it/640x480</doc>
+<status status="NOT RUN" start="2025-04-25T15:23:18.286277" elapsed="0.000136"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${CAMPO_IMAGEM}</arg>
+<arg>${Imagem}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-25T15:23:18.286612" elapsed="0.001041"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${CAMPO_TIME}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-25T15:23:18.290536" elapsed="0.000343"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${selecionar_time}[0]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-04-25T15:23:18.291342" elapsed="0.000240"/>
+</kw>
+<status status="FAIL" start="2025-04-25T15:23:17.852083" elapsed="0.439853">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78BEAEFA5+77893]
+	GetHandleVerifier [0x00007FF78BEAF000+77984]
+	(No symbol) [0x00007FF78BC791BA]
+	(No symbol) [0x00007FF78BC51B63]
+	(No symbol) [0x00007FF78BCFE92E]
+	(No symbol) [0x00007FF78BD1E972]
+	(No symbol) [0x00007FF78BCF6F03]
+	(No symbol) [0x00007FF78BCC0328]
+	(No symbol) [0x00007FF78BCC1093]
+	GetHandleVerifier [0x00007FF78C167B6D+2931725]
+	GetHandleVerifier [0x00007FF78C162132+2908626]
+	GetHandleVerifier [0x00007FF78C1800F3+3031443]
+	GetHandleVerifier [0x00007FF78BEC91EA+184970]
+	GetHandleVerifier [0x00007FF78BED086F+215311]
+	GetHandleVerifier [0x00007FF78BEB6EC4+110436]
+	GetHandleVerifier [0x00007FF78BEB7072+110866]
+	GetHandleVerifier [0x00007FF78BE9D479+5401]
+	BaseThreadInitThunk [0x00007FFDEDD57374+20]
+	RtlUserThreadStart [0x00007FFDEDF3CC91+33]
+</status>
+</kw>
+<kw name="E clique no botão criar card" owner="cadastro">
+<status status="NOT RUN" start="2025-04-25T15:23:18.292528" elapsed="0.000231"/>
+</kw>
+<kw name="Então identificar o card no time esperado" owner="cadastro">
+<status status="NOT RUN" start="2025-04-25T15:23:18.293949" elapsed="0.000292"/>
+</kw>
+<doc>Verifica se ao preencher os campos do formulário corretamente os dados são inseridos e salvos em um novo card</doc>
+<tag>cadastro</tag>
+<tag>regressivo</tag>
+<status status="FAIL" start="2025-04-25T15:23:17.850954" elapsed="0.444054">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78BEAEFA5+77893]
+	GetHandleVerifier [0x00007FF78BEAF000+77984]
+	(No symbol) [0x00007FF78BC791BA]
+	(No symbol) [0x00007FF78BC51B63]
+	(No symbol) [0x00007FF78BCFE92E]
+	(No symbol) [0x00007FF78BD1E972]
+	(No symbol) [0x00007FF78BCF6F03]
+	(No symbol) [0x00007FF78BCC0328]
+	(No symbol) [0x00007FF78BCC1093]
+	GetHandleVerifier [0x00007FF78C167B6D+2931725]
+	GetHandleVerifier [0x00007FF78C162132+2908626]
+	GetHandleVerifier [0x00007FF78C1800F3+3031443]
+	GetHandleVerifier [0x00007FF78BEC91EA+184970]
+	GetHandleVerifier [0x00007FF78BED086F+215311]
+	GetHandleVerifier [0x00007FF78BEB6EC4+110436]
+	GetHandleVerifier [0x00007FF78BEB7072+110866]
+	GetHandleVerifier [0x00007FF78BE9D479+5401]
+	BaseThreadInitThunk [0x00007FFDEDD57374+20]
+	RtlUserThreadStart [0x00007FFDEDF3CC91+33]
+</status>
+</test>
+<kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-25T15:23:18.302523" elapsed="2.253076"/>
+</kw>
+<status status="PASS" start="2025-04-25T15:23:18.301816" elapsed="2.254010"/>
+</kw>
+<status status="FAIL" start="2025-04-25T15:23:11.708318" elapsed="8.847577"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">cadastro</stat>
+<stat pass="0" fail="1" skip="0">regressivo</stat>
+</tag>
+<suite>
+<stat name="Preenchimento Correto" id="s1" pass="0" fail="1" skip="0">Preenchimento Correto</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-04-25T15:23:17.870306" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=135.0.7049.115)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78BEAEFA5+77893]
+	GetHandleVerifier [0x00007FF78BEAF000+77984]
+	(No symbol) [0x00007FF78BC791BA]
+	(No symbol) [0x00007FF78BC51B63]
+	(No symbol) [0x00007FF78BCFE92E]
+	(No symbol) [0x00007FF78BD1E972]
+	(No symbol) [0x00007FF78BCF6F03]
+	(No symbol) [0x00007FF78BCC0328]
+	(No symbol) [0x00007FF78BCC1093]
+	GetHandleVerifier [0x00007FF78C167B6D+2931725]
+	GetHandleVerifier [0x00007FF78C162132+2908626]
+	GetHandleVerifier [0x00007FF78C1800F3+3031443]
+	GetHandleVerifier [0x00007FF78BEC91EA+184970]
+	GetHandleVerifier [0x00007FF78BED086F+215311]
+	GetHandleVerifier [0x00007FF78BEB6EC4+110436]
+	GetHandleVerifier [0x00007FF78BEB7072+110866]
+	GetHandleVerifier [0x00007FF78BE9D479+5401]
+	BaseThreadInitThunk [0x00007FFDEDD57374+20]
+	RtlUserThreadStart [0x00007FFDEDF3CC91+33]
+</msg>
+</errors>
+</robot>
